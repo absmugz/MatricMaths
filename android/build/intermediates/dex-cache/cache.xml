@@ -75,12 +75,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.yqritc/android-scalablevideoview/1.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4394e0421a1e2c0cb691a783a393c192a84697ab">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.yqritc-android-scalablevideoview-1.0.4_eebd6fde8b0424e9ffc0ad03ddb0b6de82c5427d.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
         <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f36016fb2b7c55e39583d927a9aa38eacc1b2707.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/MatricMaths/react-native-video/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65786a2632247306ada370992d9576eaa0ebfe6">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/MatricMaths-react-native-video-unspecified_7209441ad7df440591fbaa59c2d68f7582ad144e.jar" />
     </item>
     <item
         is-multidex="false"

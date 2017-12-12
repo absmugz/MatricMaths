@@ -16,12 +16,12 @@
         "source": "/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-mdpi/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_tab_indicator_mtrl_alpha.9.png",
-        "source": "/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-mdpi/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_list_divider_mtrl_alpha.9.png",
         "source": "/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-mdpi/abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-mdpi/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_list_focused_holo.9.png",

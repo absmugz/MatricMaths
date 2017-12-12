@@ -1,7 +1,17 @@
 import React from 'react';
-import { StyleSheet, View} from 'react-native';
+import { Image, View} from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, Content, List, ListItem, Text } from 'native-base';
+import { Container, Header, Left, Body, Right, Button, Icon, Title, Content, List, ListItem, Text,  Card, CardItem, Thumbnail, IconNB} from 'native-base';
+
+// At the top where our imports are...
+import VideoPlayer from 'react-native-video-controls';
+
+
+const logo = require("./img/logo.png");
+const cardImage = require("./img/drawer-cover.png");
+const video = require("./video/oceans.mp4");
+
+
 
 
 
@@ -10,6 +20,7 @@ class HomeScreen extends React.Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
+      
        <Container>
         <Header>
           <Left>
@@ -65,27 +76,57 @@ class HomeScreen extends React.Component {
 }
 
 class LessonsScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Lessons Screen',
-  };
   render() {
+        const { navigate } = this.props.navigation;
     return (
-      <View>
-        <Text>Lessons will be displayed here</Text>
-      </View>
+      <Container>
+        <Header />
+        <Content>
+          <Card>
+            <CardItem>
+              <Left>
+                <Thumbnail source={{uri: "./img/logo.png"}} />
+                <Body>
+                  <Text>NativeBase</Text>
+                  <Text note>GeekyAnts</Text>
+                </Body>
+              </Left>
+            </CardItem>
+            <CardItem cardBody>
+              <Image source={{uri: "./img/drawer-cover.png" }} style={{height: 200, width: null, flex: 1}}/>
+            </CardItem>
+            <CardItem>
+              <Left>
+                <Button transparent  onPress={() => navigate('Lesson')}>
+                  <Icon active name="thumbs-up" />
+                  <Text>12 Likes</Text>
+                </Button>
+              </Left>
+              <Body>
+                <Button transparent  onPress={() => navigate('Lesson')}>
+                  <Icon active name="chatbubbles" />
+                  <Text>4 Comments</Text>
+                </Button>
+              </Body>
+              <Right>
+                <Text>11h ago</Text>
+              </Right>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
     );
   }
 }
 
 class LessonDetailScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Lesson Detail Screen',
-  };
   render() {
     return (
-      <View>
-        <Text>Lesson detail will be displayed here</Text>
-      </View>
+      // in the component's render() function
+<VideoPlayer
+    source={{ uri: './video/oceans.mp4' }}
+    navigator={ this.props.navigator }
+/>
     );
   }
 }
@@ -104,11 +145,4 @@ render() {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
