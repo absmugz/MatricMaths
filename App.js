@@ -173,9 +173,31 @@ static navigationOptions = {
                 </Body>
 </Header>
         <Content>
-          <Card>
-           <VideoPlayer source={introVideo} navigator={ this.props.navigator } />
+        
+        <Card>
+            <CardItem>
+              <Left>
+                <Thumbnail source={logo} />
+                <Body>
+                  <Text>Bodmas</Text>
+                  <Text note>Specific Language here</Text>
+                </Body>
+              </Left>
+            </CardItem>
+            <CardItem cardBody>
+              <VideoPlayer source={introVideo} navigator={ this.props.navigator } style={{height: 200, width: null, flex: 1}} />
+            </CardItem>
+            <CardItem>
+              <Left>
+              </Left>
+              <Body>
+              </Body>
+              <Right>
+                <Button success onPress={() => navigate('Lesson')}><Text> Start quiz </Text></Button>
+              </Right>
+            </CardItem>
           </Card>
+         
         </Content>
 </Container>   
 </StyleProvider>
@@ -224,19 +246,11 @@ static navigationOptions = {
             </CardItem>
             <CardItem>
               <Left>
-                <Button transparent  onPress={() => navigate('Lesson')}>
-                  <Icon active name="thumbs-up" />
-                  <Text>12 Likes</Text>
-                </Button>
               </Left>
               <Body>
-                <Button transparent  onPress={() => navigate('Lesson')}>
-                  <Icon active name="chatbubbles" />
-                  <Text>4 Comments</Text>
-                </Button>
               </Body>
               <Right>
-                <Text>11h ago</Text>
+                <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
               </Right>
             </CardItem>
           </Card>
@@ -283,21 +297,66 @@ static navigationOptions = {
             <CardItem cardBody>
               <Image  source={cardImageEnglish} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
-            <CardItem>
+             <CardItem>
               <Left>
-                <Button transparent  onPress={() => navigate('Lesson')}>
-                  <Icon active name="thumbs-up" />
-                  <Text>12 Likes</Text>
-                </Button>
               </Left>
               <Body>
-                <Button transparent  onPress={() => navigate('Lesson')}>
-                  <Icon active name="chatbubbles" />
-                  <Text>4 Comments</Text>
-                </Button>
               </Body>
               <Right>
-                <Text>11h ago</Text>
+                <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
+              </Right>
+            </CardItem>
+          </Card>
+        </Content>
+</Container>   
+ </StyleProvider>
+    );
+  }
+}
+
+class LessonsScreenEnglishQuiz extends React.Component {
+
+static navigationOptions = {
+    header: null,
+  };
+  
+  render() {
+        const { navigate } = this.props.navigation;
+    return (
+<StyleProvider style={getTheme(commonColor)}>
+  <Container>
+      <Header>
+<Left>
+<Button transparent onPress={() => navigate('Home')}>
+              <Icon name="arrow-back" />
+            </Button>
+</Left>
+                <Body>
+            <Image source={require('./img/MatricMathsLogo.png')}
+            style={{width: 160,height: 30}}/>
+                </Body>
+</Header>
+        <Content>
+          <Card>
+            <CardItem>
+              <Left>
+                <Thumbnail source={logo} />
+                <Body>
+                  <Text>Bodmas</Text>
+                  <Text note>In English</Text>
+                </Body>
+              </Left>
+            </CardItem>
+            <CardItem cardBody>
+              <Image  source={cardImageEnglish} style={{height: 200, width: null, flex: 1}}/>
+            </CardItem>
+             <CardItem>
+              <Left>
+              </Left>
+              <Body>
+              </Body>
+              <Right>
+                <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
               </Right>
             </CardItem>
           </Card>
@@ -346,19 +405,11 @@ static navigationOptions = {
             </CardItem>
             <CardItem>
               <Left>
-                <Button transparent  onPress={() => navigate('Lesson')}>
-                  <Icon active name="thumbs-up" />
-                  <Text>12 Likes</Text>
-                </Button>
               </Left>
               <Body>
-                <Button transparent  onPress={() => navigate('Lesson')}>
-                  <Icon active name="chatbubbles" />
-                  <Text>4 Comments</Text>
-                </Button>
               </Body>
               <Right>
-                <Text>11h ago</Text>
+                <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
               </Right>
             </CardItem>
           </Card>
@@ -376,6 +427,7 @@ const MatricMathsApp = StackNavigator({
   Ndebele: { screen: LessonsScreenNdebele },
   English: { screen: LessonsScreenEnglish },
   Afrikaans: { screen: LessonsScreenAfrikaans },
+  englishQuiz: { screen: LessonsScreenEnglishQuiz },
 });
 
 export default class App extends React.Component {

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Dec 13 13:39:20 UTC 2017
+#Wed Dec 13 14:23:28 UTC 2017
 20.base=/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main
 143.base=/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/res/resources-debug.ap_
 340.file=/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/res/resources-debug.ap_/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
