@@ -1,8 +1,11 @@
 import React from 'react';
 import { Image, View} from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, Content, List, ListItem, Text,  Card, CardItem, Thumbnail, IconNB} from 'native-base';
+import {StyleProvider, Container, Header, Left, Body, Right, Button, Icon, Title, Content, List, ListItem, Text,  Card, CardItem, Thumbnail, IconNB} from 'native-base';
 import AppHeader from './components/appHeader';
+
+import styles from "./styles/styles";
+
 
 import getTheme from './native-base-theme/components';
 import commonColor from './native-base-theme/variables/commonColor';
@@ -19,42 +22,62 @@ const cardImageAfrikaans = require("./img/bodmas-afrikaans.png");
 const introVideo = require("./videos/matric_maths_intro.mp4");
 
 
+
 class HomeScreen extends React.Component {
+
+static navigationOptions = {
+    header: null,
+  };
 
   render() {
     const { navigate } = this.props.navigation;
     return (
 <StyleProvider style={getTheme(commonColor)}>
-<Container>
-        <AppHeader />
+<Container style={styles.container}>
+       <Header>
+                <Body>
+            <Image source={require('./img/MatricMathsLogo.png')}
+            style={{width: 160,height: 30}}/>
+                </Body>
+      </Header>
+      
         <Content>
           <List>
              <ListItem onPress={() => navigate('English')}>
               <Text>English</Text>
+              <Right><Icon name="arrow-forward" /></Right>
             </ListItem>
             <ListItem onPress={() => navigate('Ndebele')}>
               <Text>Ndebele</Text>
+              <Right><Icon name="arrow-forward" /></Right>
             </ListItem>
             <ListItem onPress={() => navigate('Afrikaans')}>
               <Text>Afrikaans</Text>
+              <Right><Icon name="arrow-forward" /></Right>
             </ListItem>
              <ListItem>
               <Text>Sotho : Coming Soon</Text>
+              <Right><Icon name="arrow-forward" /></Right>
             </ListItem>
              <ListItem>
               <Text>Tsonga : Coming Soon</Text>
+              <Right><Icon name="arrow-forward" /></Right>
             </ListItem>
             <ListItem>
               <Text>Tswana : Coming Soon</Text>
+              <Right><Icon name="arrow-forward" /></Right>
             </ListItem>
              <ListItem>
               <Text>Venda : Coming Soon</Text>
+              <Right><Icon name="arrow-forward" /></Right>
             </ListItem>
              <ListItem>
               <Text>Xhosa : Coming Soon</Text>
+              <Right><Icon name="arrow-forward" /></Right>
             </ListItem>
              <ListItem>
               <Text>Zulu : Coming Soon</Text>
+              <Right><Icon name="arrow-forward" /></Right>
             </ListItem>
           </List>
         </Content>
@@ -65,12 +88,29 @@ class HomeScreen extends React.Component {
 }
 
 class LessonsScreen extends React.Component {
+
+static navigationOptions = {
+    header: null,
+  };
+
   render() {
         const { navigate } = this.props.navigation;
     return (
 <StyleProvider style={getTheme(commonColor)}> 
   <Container>
-        <AppHeader />
+  
+<Header>
+<Left>
+<Button transparent onPress={() => this.props.navigation.goBack()}>
+              <Icon name="arrow-back" />
+            </Button>
+</Left>
+                <Body>
+            <Image source={require('./img/MatricMathsLogo.png')}
+            style={{width: 160,height: 30}}/>
+                </Body>
+</Header>
+     
         <Content>
           <Card>
             <CardItem>
@@ -111,11 +151,27 @@ class LessonsScreen extends React.Component {
 }
 
 class LessonDetailScreen extends React.Component {
+
+static navigationOptions = {
+    header: null,
+  };
+
+
   render() {
     return (
 <StyleProvider style={getTheme(commonColor)}>
 <Container>
-        <AppHeader />
+        <Header>
+<Left>
+            <Button transparent onPress={() => this.props.navigation.goBack()}>
+              <Icon name="arrow-back" />
+            </Button>
+</Left>
+                <Body>
+            <Image source={require('./img/MatricMathsLogo.png')}
+            style={{width: 160,height: 30}}/>
+                </Body>
+</Header>
         <Content>
           <Card>
            <VideoPlayer source={introVideo} navigator={ this.props.navigator } />
@@ -129,22 +185,29 @@ class LessonDetailScreen extends React.Component {
   }
 }
 
-const MatricMathsApp = StackNavigator({
-  Home: { screen: HomeScreen },
-  Lessons: { screen: LessonsScreen },
-  Lesson: { screen: LessonDetailScreen },
-  Ndebele: { screen: LessonsScreenNdebele },
-  English: { screen: LessonsScreenEnglish },
-  Afrikaans: { screen: LessonsScreenAfrikaans },
-});
 
 class LessonsScreenNdebele extends React.Component {
+
+static navigationOptions = {
+    header: null,
+  };
+  
   render() {
         const { navigate } = this.props.navigation;
     return (
 <StyleProvider style={getTheme(commonColor)}>
   <Container>
-        <AppHeader />
+<Header>
+<Left>
+<Button transparent onPress={() => navigate('Home')}>
+              <Icon name="arrow-back" />
+            </Button>
+</Left>
+                <Body>
+            <Image source={require('./img/MatricMathsLogo.png')}
+            style={{width: 160,height: 30}}/>
+                </Body>
+</Header>
         <Content>
           <Card>
             <CardItem>
@@ -185,12 +248,27 @@ class LessonsScreenNdebele extends React.Component {
 }
 
 class LessonsScreenEnglish extends React.Component {
+
+static navigationOptions = {
+    header: null,
+  };
+  
   render() {
         const { navigate } = this.props.navigation;
     return (
 <StyleProvider style={getTheme(commonColor)}>
   <Container>
-        <AppHeader />
+      <Header>
+<Left>
+<Button transparent onPress={() => navigate('Home')}>
+              <Icon name="arrow-back" />
+            </Button>
+</Left>
+                <Body>
+            <Image source={require('./img/MatricMathsLogo.png')}
+            style={{width: 160,height: 30}}/>
+                </Body>
+</Header>
         <Content>
           <Card>
             <CardItem>
@@ -231,12 +309,27 @@ class LessonsScreenEnglish extends React.Component {
 }
 
 class LessonsScreenAfrikaans extends React.Component {
+
+static navigationOptions = {
+    header: null,
+  };
+
   render() {
         const { navigate } = this.props.navigation;
     return (
 <StyleProvider style={getTheme(commonColor)}>
   <Container>
-        <AppHeader />
+<Header>
+<Left>
+<Button transparent onPress={() => navigate('Home')}>
+              <Icon name="arrow-back" />
+            </Button>
+</Left>
+                <Body>
+            <Image source={require('./img/MatricMathsLogo.png')}
+            style={{width: 160,height: 30}}/>
+                </Body>
+</Header>
         <Content>
           <Card>
             <CardItem>
@@ -276,7 +369,14 @@ class LessonsScreenAfrikaans extends React.Component {
   }
 }
 
-
+const MatricMathsApp = StackNavigator({
+  Home: { screen: HomeScreen },
+  Lessons: { screen: LessonsScreen },
+  Lesson: { screen: LessonDetailScreen },
+  Ndebele: { screen: LessonsScreenNdebele },
+  English: { screen: LessonsScreenEnglish },
+  Afrikaans: { screen: LessonsScreenAfrikaans },
+});
 
 export default class App extends React.Component {
 render() {
