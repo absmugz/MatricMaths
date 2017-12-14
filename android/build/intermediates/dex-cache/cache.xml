@@ -3,21 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="/home/ubuntu/workspace/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_c4dedfc5c25c327ea346e92af50ff295a0efafd0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_1cf323cb11d711c50243abf316f6d84d270ff720.jar" />
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_29393714b5602678dd608d01a5718769c1b0245e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -27,42 +18,6 @@
         revision="23.0.1"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
         <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_0c9b895ddecf7c8de30d20c4495215b1dfb5e98f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_090ef87ae9009be22d376f8045aa12d9c7d95382.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_b510b6965633e91950dfc48cbbe0059629c4c773.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_7acd0f97fd484600cf938493fa5965120fc0ec23.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_8a43488bcd9609f1a4da404cb498f84a2ed6941e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -81,105 +36,6 @@
         revision="23.0.1"
         sha1="4394e0421a1e2c0cb691a783a393c192a84697ab">
         <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.yqritc-android-scalablevideoview-1.0.4_eebd6fde8b0424e9ffc0ad03ddb0b6de82c5427d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f36016fb2b7c55e39583d927a9aa38eacc1b2707.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/MatricMaths/react-native-video/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65786a2632247306ada370992d9576eaa0ebfe6">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/MatricMaths-react-native-video-unspecified_7209441ad7df440591fbaa59c2d68f7582ad144e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_8ba3a7408ee40cb3a25b635b7aa7829722c9047c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_63d6ca8971ee5d450a024ba703dee41f01198541.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_ee3af623245b42e9b206dfec9d9236d46179ec55.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_3572dd5778e9aca909c0a9d79a2d8c1e1c5a6506.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_2a3557ca009fe477c60f868380fecd75015d404c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_d2524675a53743b5954293db8ad96484c4b27c28.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="24303e5ddb2c1210dd7e8db9dbab018f50313e48">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.50.3_a643600cecf931d8eb23cbd30e56287ca5975556.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_6e182e03b6deb1f91d739317790f6c04d81736bb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ubuntu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_79293b8a1c11a00c39f457eb895a113ec31be084.jar" />
     </item>
     <item
         is-multidex="false"
@@ -207,6 +63,186 @@
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
         <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_df2d01d2275fa67f7c56ce3b9a72d223c7d7ba77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_1cf323cb11d711c50243abf316f6d84d270ff720.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_b510b6965633e91950dfc48cbbe0059629c4c773.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_7acd0f97fd484600cf938493fa5965120fc0ec23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_1454964a7bbf1772d78b7c8e6508fa5ddecb7f27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/MatricMaths/react-native-video/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65786a2632247306ada370992d9576eaa0ebfe6">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/MatricMaths-react-native-video-unspecified_7209441ad7df440591fbaa59c2d68f7582ad144e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_8ba3a7408ee40cb3a25b635b7aa7829722c9047c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_5292a0d4556e7ce63e460df4b4067a450f854355.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_a5907d57f8b028d188ee1310de53a969ad7901f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_3572dd5778e9aca909c0a9d79a2d8c1e1c5a6506.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="24303e5ddb2c1210dd7e8db9dbab018f50313e48">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.50.3_a643600cecf931d8eb23cbd30e56287ca5975556.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_6e182e03b6deb1f91d739317790f6c04d81736bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f36016fb2b7c55e39583d927a9aa38eacc1b2707.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_63d6ca8971ee5d450a024ba703dee41f01198541.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_2a3557ca009fe477c60f868380fecd75015d404c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_937d7b274da97daba4b878b763690f56fa00dfcc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/MatricMaths/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="722e34ba5d4009c2551aca051aee8bd56cbdc19c">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/MatricMaths-react-native-vector-icons-unspecified_5cf7629411248233006a83c35689de784b9dfca6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/MatricMaths/react-native-smart-splash-screen/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69b5b1d0bc2ad3a93c4298297c316698315f4103">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/MatricMaths-react-native-smart-splash-screen-unspecified_d94acec5e9796ee943cdd8ad34273cfc9cf99897.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_8a43488bcd9609f1a4da404cb498f84a2ed6941e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_a66f5b65ed9b66320e544b423ce1c24b7b69d798.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ubuntu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_79293b8a1c11a00c39f457eb895a113ec31be084.jar" />
     </item>
 
 </items>

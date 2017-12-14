@@ -29,6 +29,7 @@ const introVideo = require("./videos/matric_maths_intro.mp4");
 
 class HomeScreen extends React.Component {
 
+
 static navigationOptions = {
     header: null,
   };

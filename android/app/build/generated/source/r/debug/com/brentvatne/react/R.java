@@ -8,21 +8,21 @@ package com.brentvatne.react;
 
 public final class R {
 	public static final class attr {
-		public static final int scalableType = 0x7f0100e6;
+		public static final int scalableType = 0x7f0100ec;
 	}
 	public static final class id {
-		public static final int center = 0x7f0d001a;
+		public static final int center = 0x7f0d001b;
 		public static final int centerBottom = 0x7f0d002b;
 		public static final int centerBottomCrop = 0x7f0d002c;
-		public static final int centerCrop = 0x7f0d001b;
-		public static final int centerInside = 0x7f0d001c;
+		public static final int centerCrop = 0x7f0d001c;
+		public static final int centerInside = 0x7f0d001d;
 		public static final int centerTop = 0x7f0d002d;
 		public static final int centerTopCrop = 0x7f0d002e;
 		public static final int endInside = 0x7f0d002f;
-		public static final int fitCenter = 0x7f0d001d;
-		public static final int fitEnd = 0x7f0d001e;
-		public static final int fitStart = 0x7f0d001f;
-		public static final int fitXY = 0x7f0d0020;
+		public static final int fitCenter = 0x7f0d001e;
+		public static final int fitEnd = 0x7f0d001f;
+		public static final int fitStart = 0x7f0d0020;
+		public static final int fitXY = 0x7f0d0021;
 		public static final int leftBottom = 0x7f0d0030;
 		public static final int leftBottomCrop = 0x7f0d0031;
 		public static final int leftCenter = 0x7f0d0032;
@@ -39,7 +39,7 @@ public final class R {
 		public static final int startInside = 0x7f0d003c;
 	}
 	public static final class styleable {
-		public static final int[] scaleStyle = { 0x7f0100e6 };
+		public static final int[] scaleStyle = { 0x7f0100ec };
 		public static final int scaleStyle_scalableType = 0;
 	}
 }

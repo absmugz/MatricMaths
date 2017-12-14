@@ -1,4 +1,4 @@
-#Thu Dec 14 09:39:41 UTC 2017
+#Thu Dec 14 14:33:22 UTC 2017
 base.0=/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/ubuntu/workspace/MatricMaths/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
