@@ -1,8 +1,10 @@
 import React from 'react';
-import { Image, View} from 'react-native';
+import { Image, View, StatusBar, TouchableOpacity} from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import {StyleProvider, Container, Header, Left, Body, Right, Button, Icon, Title, Content, List, ListItem, Text,  Card, CardItem, Thumbnail, IconNB} from 'native-base';
+import {StyleProvider, Container, Header, Left, Body, Right, Button, Title, Content, List, ListItem, Text,  Card, CardItem, Thumbnail, Icon, IconNB} from 'native-base';
 import AppHeader from './components/appHeader';
+import Quiz  from './components/quiz';
+
 
 import styles from "./styles/styles";
 
@@ -12,6 +14,8 @@ import commonColor from './native-base-theme/variables/commonColor';
 
 // At the top where our imports are...
 import VideoPlayer from 'react-native-video-controls';
+
+//import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 const logo = require("./img/logo.png");
@@ -158,6 +162,7 @@ static navigationOptions = {
 
 
   render() {
+        const { navigate } = this.props.navigation;
     return (
 <StyleProvider style={getTheme(commonColor)}>
 <Container>
@@ -188,12 +193,9 @@ static navigationOptions = {
               <VideoPlayer source={introVideo} navigator={ this.props.navigator } style={{height: 200, width: null, flex: 1}} />
             </CardItem>
             <CardItem>
-              <Left>
-              </Left>
-              <Body>
-              </Body>
+            
               <Right>
-                <Button success onPress={() => navigate('Lesson')}><Text> Start quiz </Text></Button>
+               <Button success onPress={() => navigate('englishQuiz')}><Text> Start quiz </Text></Button>
               </Right>
             </CardItem>
           </Card>
@@ -245,12 +247,8 @@ static navigationOptions = {
               <Image  source={cardImageNdebele} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
             <CardItem>
-              <Left>
-              </Left>
-              <Body>
-              </Body>
-              <Right>
-                <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
+               <Right>
+               <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
               </Right>
             </CardItem>
           </Card>
@@ -298,12 +296,8 @@ static navigationOptions = {
               <Image  source={cardImageEnglish} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
              <CardItem>
-              <Left>
-              </Left>
-              <Body>
-              </Body>
-              <Right>
-                <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
+               <Right>
+               <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
               </Right>
             </CardItem>
           </Card>
@@ -319,15 +313,59 @@ class LessonsScreenEnglishQuiz extends React.Component {
 static navigationOptions = {
     header: null,
   };
-  
+
+constructor(props){
+    super(props)
+    this.state = {
+      quizFinish : false,
+      score: 0
+    }
+  }
+
+  _quizFinish(score){    
+    this.setState({ quizFinish: true, score : score })
+  }
+  _scoreMessage(score){
+    if(score <= 30){
+      return (<View style={styles.innerContainer} >
+                <View style={{ flexDirection: "row"}} >
+                  <Icon name="trophy" size={30} color="white" />
+                </View>
+                <Text style={styles.score}>You need to work hard</Text>
+                <Text style={styles.score}>You scored {score}%</Text>
+              </View>)
+    }else if(score > 30 && score < 60){
+      return (<View style={styles.innerContainer} >
+                  <View style={{ flexDirection: "row"}} >
+                    <Icon name="trophy" size={30} color="white" />
+                    <Icon name="trophy" size={30} color="white" />
+                  </View>
+                  <Text style={styles.score}>You are good</Text>
+                  <Text style={styles.score}>Congrats you scored {score}% </Text>
+                </View>)
+    }else if(score >= 60){
+      return (<View style={styles.innerContainer}>
+                 <View style={{ flexDirection: "row"}} >
+                     <Icon name="trophy" size={30} color="white" />
+                     <Icon name="trophy" size={30} color="white" />
+                     <Icon name="trophy" size={30} color="white" />
+                  </View>
+                  <Text style={styles.score}>You are the master</Text>
+                  <Text style={styles.score}>Congrats you scored {score}% </Text>
+                </View>)
+    }
+  }
+
+
   render() {
         const { navigate } = this.props.navigation;
     return (
+ 
 <StyleProvider style={getTheme(commonColor)}>
   <Container>
       <Header>
 <Left>
-<Button transparent onPress={() => navigate('Home')}>
+<Button transparent onPress={() => this.props.navigation.goBack()}>
               <Icon name="arrow-back" />
             </Button>
 </Left>
@@ -337,35 +375,22 @@ static navigationOptions = {
                 </Body>
 </Header>
         <Content>
-          <Card>
-            <CardItem>
-              <Left>
-                <Thumbnail source={logo} />
-                <Body>
-                  <Text>Bodmas</Text>
-                  <Text note>In English</Text>
-                </Body>
-              </Left>
-            </CardItem>
-            <CardItem cardBody>
-              <Image  source={cardImageEnglish} style={{height: 200, width: null, flex: 1}}/>
-            </CardItem>
-             <CardItem>
-              <Left>
-              </Left>
-              <Body>
-              </Body>
-              <Right>
-                <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
-              </Right>
-            </CardItem>
-          </Card>
+          { this.state.quizFinish ? <View style={styles.container}>
+           <View style={styles.circle}>
+
+             { this._scoreMessage(this.state.score) }
+           </View>
+
+       </View> :  <Quiz quizFinish={(score) => this._quizFinish(score)} /> }
         </Content>
 </Container>   
  </StyleProvider>
     );
   }
+
 }
+
+
 
 class LessonsScreenAfrikaans extends React.Component {
 
@@ -404,12 +429,8 @@ static navigationOptions = {
               <Image  source={cardImageAfrikaans} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
             <CardItem>
-              <Left>
-              </Left>
-              <Body>
-              </Body>
-              <Right>
-                <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
+               <Right>
+               <Button success onPress={() => navigate('Lesson')}><Text> Start lesson </Text></Button>
               </Right>
             </CardItem>
           </Card>
