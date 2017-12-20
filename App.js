@@ -23,7 +23,7 @@ const cardImage = require("./img/drawer-cover.png");
 const cardImageEnglish = require("./img/bodmas-english.png");
 const cardImageNdebele = require("./img/bodmas-isindebele.png");
 const cardImageAfrikaans = require("./img/bodmas-afrikaans.png");
-const introVideo = require("./videos/matric_maths_intro.mp4");
+const introVideo = require("./videos/matric-maths-english.mp4");
 
 
 
@@ -191,7 +191,7 @@ static navigationOptions = {
               </Left>
             </CardItem>
             <CardItem cardBody>
-              <VideoPlayer source={introVideo} navigator={ this.props.navigator } style={{height: 200, width: null, flex: 1}} />
+              <VideoPlayer source={introVideo} navigator={ this.props.navigator } style={{height: 300, width: null, flex: 1}} />
             </CardItem>
             <CardItem>
             

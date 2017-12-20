@@ -17,54 +17,54 @@ let arrnew = []
 const jsonData = {"quiz" : {
   "quiz1" : {
     "question1" : {
-      "correctoption" : "option3",
+      "correctoption" : "option1",
       "options" : {
-        "option1" : "Java",
-        "option2" : "PHP",
-        "option3" : "Javascript",
-        "option4" : "IOS"
+        "option1" : "7",
+        "option2" : "103",
+        "option3" : "99",
+        "option4" : "35"
       },
-      "question" : "React is a ____ library"
+      "question" : "Evaluate 1 + 3 x 2"
     },
     "question2" : {
       "correctoption" : "option4",
       "options" : {
-          "option1" : "XML",
-          "option2" : "YML",
-          "option3" : "HTML",
-          "option4" : "JSX"
+          "option1" : "3950",
+          "option2" : "411",
+          "option3" : "412",
+          "option4" : "6"
         },
-      "question" : "____ tag syntax is used in React"
+      "question" : "Evaluate 2 + (3 - 1) x 2"
     },
     "question3" : {
       "correctoption" : "option1",
       "options" : {
-          "option1" : "Single root DOM node",
-          "option2" : "Double root DOM node",
-          "option3" : "Multiple root DOM node",
-          "option4" : "None of the above"
+          "option1" : "-4",
+          "option2" : "-225",
+          "option3" : "40",
+          "option4" : "335"
         },
-      "question" : "Application built with just React usually have ____"
+      "question" : "Evaluate 4 - 3 + 5(2/2)"
     },
     "question4" : {
       "correctoption" : "option2",
       "options" : {
-          "option1" : "mutable",
-          "option2" : "immutable",
-          "option3" : "variable",
-          "option4" : "none of the above"
+          "option1" : "24",
+          "option2" : "224",
+          "option3" : "234",
+          "option4" : "25"
         },
-      "question" : "React elements are ____"
+      "question" : "Evaluate ((1+4-42/14+65)+((70/35+7*9)/13))*((65+7-19)+(19-39*5))/369"
     },
     "question5" : {
       "correctoption" : "option3",
       "options" : {
-          "option1" : "functions",
-          "option2" : "array",
-          "option3" : "components",
-          "option4" : "json data"
+          "option1" : "245",
+          "option2" : "-225",
+          "option3" : "-235",
+          "option4" : "254"
         },
-      "question" : "React allows to split UI into independent and reusable pieses of ____"
+      "question" : "Evaluate 7+5-2 x (7+89)-94/2 + (33/3+9 x 2-7)/11"
     }
   }
 }

@@ -1907,8 +1907,9 @@ containing a value of this type.
         public static final int node_modules_reactnativevideocontrols_assets_img_topvignette=0x7f020059;
         public static final int node_modules_reactnativevideocontrols_assets_img_volume=0x7f02005a;
         public static final int node_modules_reactnavigation_src_views_assets_backicon=0x7f02005b;
-        public static final int notification_template_icon_bg=0x7f02005d;
+        public static final int notification_template_icon_bg=0x7f02005e;
         public static final int videos_matric_maths_intro=0x7f02005c;
+        public static final int videos_matricmathsenglish=0x7f02005d;
     }
     public static final class id {
         public static final int action0=0x7f0d006d;
