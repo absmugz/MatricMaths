@@ -1,9 +1,20 @@
 import React from 'react';
-import { Image, View, StatusBar, TouchableOpacity} from 'react-native';
+import { Image, View, StatusBar, TouchableOpacity, ScrollView, Dimensions, WebView} from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import {StyleProvider, Container, Header, Left, Body, Right, Button, Title, Content, List, ListItem, Text,  Card, CardItem, Thumbnail, Icon, IconNB} from 'native-base';
 import AppHeader from './components/appHeader';
 import Quiz  from './components/quiz';
+
+import HTML from 'react-native-render-html';
+import StaticServer from 'react-native-static-server';
+import RNFS from 'react-native-fs';
+
+
+// create a path you want to write to
+let path = RNFS.DocumentDirectoryPath + '/mathjax';
+
+let server = new StaticServer(8080, path);
+
 
 
 import styles from "./styles/styles";
@@ -24,8 +35,6 @@ const cardImageEnglish = require("./img/bodmas-english.png");
 const cardImageNdebele = require("./img/bodmas-isindebele.png");
 const cardImageAfrikaans = require("./img/bodmas-afrikaans.png");
 const introVideo = require("./videos/matric-maths-english.mp4");
-
-
 
 class HomeScreen extends React.Component {
 
@@ -180,6 +189,28 @@ static navigationOptions = {
 </Header>
         <Content>
         
+       <View>
+       
+        
+            
+        <ScrollView style={{borderWidth:3, borderColor : '#0000FF', flex:1}}>
+            <WebView  source={{uri: 'https://github.com/facebook/react-native'}} style={{height: 250}}/>
+        </ScrollView>
+        
+         <ScrollView style={{borderWidth:3, borderColor : '#FF0000', flex:1}}>
+               
+                
+                <WebView source={{ uri: 'file:///android_asset/mathjax/index.html' }}
+                javaScriptEnabled={true}
+                domStorageEnabled={true}
+                startInLoadingState={true}
+                />
+    
+            </ScrollView>
+        
+       
+      </View>
+      
         <Card>
             <CardItem>
               <Left>
@@ -192,6 +223,7 @@ static navigationOptions = {
             </CardItem>
             <CardItem cardBody>
               <VideoPlayer source={introVideo} navigator={ this.props.navigator } style={{height: 300, width: null, flex: 1}} />
+    
             </CardItem>
             <CardItem>
             
@@ -199,6 +231,11 @@ static navigationOptions = {
                <Button success onPress={() => navigate('englishQuiz')}><Text> Start quiz </Text></Button>
               </Right>
             </CardItem>
+            
+          
+             
+            
+            
           </Card>
          
         </Content>

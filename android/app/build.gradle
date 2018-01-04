@@ -97,6 +97,7 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
 
+
     defaultConfig {
         applicationId "com.matricmaths"
         minSdkVersion 16
@@ -107,6 +108,11 @@ android {
             abiFilters "armeabi-v7a", "x86"
         }
     }
+    
+     aaptOptions{
+    cruncherEnabled = false
+}
+    
     splits {
         abi {
             reset()
@@ -137,6 +143,8 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-static-server')
+    compile project(':react-native-fs')
     compile project(':react-native-vector-icons')
     compile project(':react-native-smart-splash-screen')
     compile project(':react-native-video')
