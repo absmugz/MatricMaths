@@ -205,6 +205,8 @@ static navigationOptions = {
                 domStorageEnabled={true}
                 startInLoadingState={true}
                 />
+                
+                <WebView source={{ html: HTML, baseUrl: './mathjax/' }} />
     
             </ScrollView>
         

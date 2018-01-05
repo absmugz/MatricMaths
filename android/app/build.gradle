@@ -96,7 +96,10 @@ def enableProguardInReleaseBuilds = false
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
-
+    
+      aaptOptions{
+    cruncherEnabled = false
+}
 
     defaultConfig {
         applicationId "com.matricmaths"
@@ -108,11 +111,6 @@ android {
             abiFilters "armeabi-v7a", "x86"
         }
     }
-    
-     aaptOptions{
-    cruncherEnabled = false
-}
-    
     splits {
         abi {
             reset()
@@ -143,11 +141,6 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-static-server')
-    compile project(':react-native-fs')
-    compile project(':react-native-vector-icons')
-    compile project(':react-native-smart-splash-screen')
-    compile project(':react-native-video')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:+"  // From node_modules
